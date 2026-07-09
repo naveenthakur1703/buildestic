@@ -18,76 +18,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://buildestic.com"),
-
   title: {
     default: "Buildestic - Construction Calculators",
     template: "%s | Buildestic",
   },
 
   description:
-    "Free online construction calculators for brick, concrete, cement, paint, steel, tile, mortar, and more. Fast, accurate, and easy to use.",
+    "Free online construction calculators for brick, concrete, cement, paint, steel, tile, mortar and more.",
 
-  keywords: [
-    "Buildestic",
-    "Construction Calculators",
-    "Brick Calculator",
-    "Concrete Calculator",
-    "Cement Calculator",
-    "Paint Calculator",
-    "Tile Calculator",
-    "Steel Weight Calculator",
-    "Mortar Calculator",
-    "Building Material Calculator",
-  ],
-
-  applicationName: "Buildestic",
-
-  authors: [
-    {
-      name: "Buildestic",
-      url: "https://buildestic.com",
-    },
-  ],
-
-  creator: "Buildestic",
-
-  publisher: "Buildestic",
-
-  alternates: {
-    canonical: "https://buildestic.com",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://buildestic.com",
-    siteName: "Buildestic",
-    title: "Buildestic - Construction Calculators",
-    description:
-      "Free online construction calculators for brick, concrete, cement, paint, steel, tile, mortar, and more.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Buildestic",
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Buildestic - Construction Calculators",
-    description:
-      "Free online construction calculators for builders, contractors and homeowners.",
-    images: ["/og-image.jpg"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

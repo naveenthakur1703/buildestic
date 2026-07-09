@@ -4,7 +4,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Buildestic",
   url: "https://buildestic.com",
-  logo: "https://buildestic.com/logo.png",
+  logo: "https://buildestic.com/android-chrome-512x512.png",
   description:
     "Professional online construction calculators for builders, contractors, engineers and homeowners.",
 };
