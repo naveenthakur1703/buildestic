@@ -1,6 +1,27 @@
+import JsonLd from "@/components/seo/JsonLd";
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Buildestic",
+  url: "https://buildestic.com",
+  logo: "https://buildestic.com/logo.png",
+  description:
+    "Professional online construction calculators for builders, contractors, engineers and homeowners.",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Buildestic",
+  url: "https://buildestic.com",
+  description:
+    "Free online construction calculators for brick, concrete, cement, steel, paint, tile and more.",
+};
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50">
+      <JsonLd data={organizationSchema} />
+      <JsonLd data={websiteSchema} />
       <section className="max-w-5xl mx-auto px-6 py-20 text-center">
         <h1 className="text-5xl font-bold mb-6">
           Buildestic Construction Calculators
