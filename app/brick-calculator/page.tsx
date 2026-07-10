@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import BrickCalculator from "./BrickCalculator";
 import JsonLd from "@/components/seo/JsonLd";
+import {
+  softwareApplicationSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  faqSchema,
+} from "./schemas";
 
 export const metadata: Metadata = {
   title: "Brick Calculator",
@@ -12,5 +18,14 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <BrickCalculator />;
+  return (
+    <>
+      <JsonLd data={softwareApplicationSchema} />
+      <JsonLd data={webPageSchema} />
+      <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={faqSchema} />
+
+      <BrickCalculator />
+    </>
+  );
 }

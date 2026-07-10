@@ -1,4 +1,5 @@
 import JsonLd from "@/components/seo/JsonLd";
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
